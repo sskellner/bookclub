@@ -23,32 +23,46 @@
     <script type="text/javascript" src="js/jquery-comments.js"></script>
     <script type="text/javascript" src="https://www.google.com/books/jsapi.js"></script>
 
+    <link href="https://fonts.googleapis.com/css?family=Quicksand|Solway&display=swap" rel="stylesheet">
    </head>
 
    <body>
+    <div id="navbar">
+      <a class='active' href="#">Home</a>
+      <a href="forum.html">Forum</a>
+    </div>
+
     <div class="container">
       <div class="header">
-        <div><a href="forum.html">forum</a></div>
-        <h1>Welcome to the book club!</h1>
+        <div class='text-center'><h1>Welcome to the book club!</h1></div>
       </div>
+      <div class="row"><br><br></div>
       <div class="row">
-        <div class="col-md-12" center-block text-center>
-          <h2>Current Books</h2>
+        <div class="col-sm-12">
+          <div class='text-center'><h3>CURRENTLY READING...</h3></div>
         </div>
       </div>
       <div class="row">
         <div class="col-sm-2"></div>
         <div class="col-sm-8">
-          <div class="enterBook">
-            <input id="newbook" type="text" name="addbookisbn" value="1118051076"><br>
-            <input type="submit" name="addbookbutton" value="Add New Book" onclick="addBookFunction(document.getElementById('newbook').value)">
-            <input type="submit" name="removebookbutton" value="Remove Current Book" onclick="removeThisSlide()">
+          <!-- <div class="enterBook"> -->
+            <div class='addbook'>
+              <input id="newbook" type="text" name="addbookisbn" value="1118051076">
+              <input class="clickme" type="submit" name="addbookbutton" value="Add New Book" onclick="addBookFunction(document.getElementById('newbook').value)">
+            </div>
+            <div class='removebook'><input class='clickme' type="submit" name="removebookbutton" value="Remove Current Book" onclick="removeThisSlide()"></div>
 
             <!-- <div class="holder1">your content</div>
             <div class="holder1">your content</div>
             <div class="holder1">your content</div>
             <div class="holder1">your content</div> -->
-          </div>
+          <!-- </div> -->
+        </div>
+        <div class="col-sm-2"></div>
+      </div>
+      <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
           <div class="single-item">
           </div>
         </div>

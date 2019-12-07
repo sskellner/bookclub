@@ -2,26 +2,38 @@
 
 <head>
   <title>Forum</title>
+
+  <link rel="stylesheet" type='text/css' href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand|Solway&display=swap" rel="stylesheet">
 </head>
 
 <body>
-<div><a href="index.html">home</a></div>
-<h1>Forum</h1>
-<div>
-  <iframe id="forum_embed"
-    src="javascript:void(0)"
-    scrolling="no"
-    frameborder="0"
-    width="900"
-    height="700">
-  </iframe>
-  <script type="text/javascript">
-    document.getElementById('forum_embed').src =
-       'https://groups.google.com/forum/embed/?place=forum/booksnthings'
-       + '&showsearch=true&showpopout=true&showtabs=false'
-       + '&parenturl=' + encodeURIComponent(window.location.href);
-  </script>
-</div>
-
+  <div id="navbar">
+    <a href="index.html">Home</a>
+    <a class='active' href="#">Forum</a>
+  </div>
+  <div class="container">
+    <div class="header">
+      <h1>Forum</h1>
+    </div>
+  <div>
+    <iframe id="forum_embed"
+      src="javascript:void(0)"
+      scrolling="no"
+      frameborder="0"
+      width="100%"
+      height="700px">
+    </iframe>
+    <script type="text/javascript">
+      document.getElementById('forum_embed').src =
+         'https://groups.google.com/forum/embed/?place=forum/booksnthings'
+         + '&showsearch=true&showpopout=true&showtabs=false'
+         + '&parenturl=' + encodeURIComponent(window.location.href);
+    </script>
+  </div>
+  </div>
+  <script src="js/bootstrap.js" ></script>
+  <script src="main.js"></script>
 </body>
 </html>
