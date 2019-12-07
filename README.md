@@ -1,4 +1,4 @@
 # bookclub
 The new version of the book club. 
 
-view at [sskellner.github.io/bookclub/](sskellner.github.io/bookclub/)
+view at [sskellner.github.io/bookclub/](https://sskellner.github.io/bookclub/)
